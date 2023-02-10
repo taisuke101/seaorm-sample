@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  postgres:
+    container_name: postgres
+    image: "postgres:latest"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: taisuke
+      POSTGRES_USER: taisuke
+      POSTGRES_DB: taisuke
+    ports:
+      - 5432:5432
+    # extra_hosts:
+    #   - 'host.docker.internal:host-gateway'
